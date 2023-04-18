@@ -29,15 +29,15 @@ function registrarse(usuarios){
     let id = usuarios.length
     usuarios.push(new Usuario(nombre, correo, contraseña, id))
     if (nombre.length == 0){
-        mostrar.innerHTML = "Debe ingresar el nombre"
+        alert("Debe ingresar el nombre")
         return
     }
     if (correo.length == 0){
-        mostrar.innerHTML = "Debe ingresar el correo"
+        alert("Debe ingresar el correo")
         return
     } 
     if (contraseña.length == 0){
-        mostrar.innerHTML = "Debe ingresar la contraseña"
+        alert("Debe ingresar la contraseña")
         return
     }
     alert(`Bienvenido ${nombre}`)
